@@ -22,7 +22,7 @@ object LoadBalancer:
             backendsRoundRobin(backends).flatMap {
                     _.fold(ZIO.succeed(Response.text("All backends are inactive"))){ backendUrl =>
                         val url = addRequestPathToBackendUrl(backendUrl.value, request)
-                    Response.
+
                         (for
                             parsedUrl <- ZIO.fromEither(parseUri(url)).tap(u => ZIO.logInfo(s"Parsed URI: $u"))
                             _ <- Console.printLine(parsedUrl)
