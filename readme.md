@@ -25,7 +25,7 @@
   - YAML/JSON configuration
   - Environment-based configs
 
-- ** link to demo **
+- **link to demo**
   [Demo](https://youtu.be/7GzsdqaPM58)
 
 
