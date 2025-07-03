@@ -69,18 +69,12 @@ Distributes requests evenly across all healthy backends.
 LoadBalancer.roundRobin(backends)
 ```
 
-## 📊 Monitoring
 
 ### Health Checks
 Access health status at `/health`:
 
 ```bash
 curl http://localhost:8080/health
-```
-
-Response:
-```json
-insert response 
 ```
 
 ## 🧪 Testing
